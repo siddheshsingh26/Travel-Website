@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+   font-family: 'Montserrat', sans-serif;
+   line-height: 1.7;
+}
+
+.header{
+    position: relative;
+    height: 96vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+html{
+    font-size: 62.5%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+a,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    font-weight: 500;
+}
+
+
+/* ################ Utility Classes ################# */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: #333333;
+}
+
+.text-gray{
+    color: #555555;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 10rem;
+    
+}
+
+.btn-primary-hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    border:3px solid #e63946;
+    background-color: white;
+    border-radius: 10rem;
+    
+}
+
+.btn-secondary-hover{
+    background-color: #fcf3f2;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+
+.bottom-border-red{
+    border-bottom: 4px solid red;
+}
+
+/* ################ HEADER STYLINE ################ */
+
+.navbar{
+    padding: 1rem;
+}
+
+
+ .logo,
+ .navbar a{
+    color: white;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #ffff;
+}
+
+
+ .navbar .logo{
+    float:left;
+    font-size: 3.5rem;
+}
+ .navbar .navitems{
+    float: right;  
+    margin-top: 1rem;
+    
+}
+ .navbar .navitem{
+    display: inline-block; 
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear:both;
+
+}
+
+/* ################ HEADER-CONTENT STYLINE ################ */
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+    text-align: center;
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.header-content p{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+/* ################ SHOWCASE SECTION STYLING ################ */
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 35rem;
+    box-shadow:5px 5px 20px 0 black ;
+   
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .imgbox ,.row2 .textbox{
+    float: left;
+    width: 50%;
+} 
+.row2 .imgbox ,.row1 .textbox{
+    float: right;
+    width: 50%;
+} 
+.textbox{
+     width: 100%;
+    height: 35rem;  
+    background-color: white;
+    font-size: 2rem;
+}
+
+.row .imgbox{
+    height: 100%;
+}
+.row .textbox{
+    padding:3rem;
+   
+    
+}
+.row .imgbox img{
+    display:inline-block;
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ################ SHOWCASE SECTION STYLING ################ */
+
+.features{
+    padding: 10rem 0;
+    margin-bottom: 5%;
+
+}
+
+.box{
+    width: 33.333333333%;
+    padding: 2rem;
+    text-align: center;
+    float: left;
+    box-shadow:5px 5px 20px 0 black ;
+}
+
+.box1, .box3{
+    background-color: #263238;
+    color: white ;
+}
+.box2{
+    color: white;
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+}
+
+.box-wrapper{
+    content:"";
+    display: block;
+    clear:both;
+}
+.box1, .box2 , .box3 i{
+ color: white;
+}
+
+
+/* ################ SHOWCASE SECTION STYLING ################ */
+
+
+.footer{
+    background: #263238;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+.footer .social-media-links i{
+    padding: 2rem;
+}
+
+/* ################ ABOUT PAGE STYLING ################ */
+
+.about-wrapper{
+    text-align: center;
+}
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: left;
+    width: 50%;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* ################ COUNTS STYLING ################ */
+.counts-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+    margin-bottom: 1.5%;
+}
+
+
+
+
+/* ################ CTA Banner STYLING ################ */
+
+.cta-banner{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #00000058;
+}
+
+.cta-banner-left{
+    width: 60%;
+    float: left;
+}
+.cta-banner-right{
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.btn-cta{
+    text-align: center;
+    display:inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+
+/* ########################## Contact page styling ################# */
+
+.contact-form{
+    padding:5rem 0 ;
+}
+
+.form-wrapper{
+    background-color: #f4f4f4;
+}
+
+.form-wrapper::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.company-address{
+    width: 49%;
+    font-size: 1.6rem;
+    padding: 1.5%;
+    float: left;
+}
+
+.form{
+    width: 49%;
+    font-size: 1.5rem;
+    padding: 1.5%;
+    float: right;
+    
+}
+
+.input-box{
+    width: 100%;
+}
+.btn-contact{
+    background-color: #e63946;
+    padding: 5px 20px;
+    color: #ddd;
+}
+
+.aline-center{
+    text-align: center;
+}
+
+.icon-contact{
+    color: #263238;
+    font-size: 2rem;
+}
+
+.company-img{
+    object-fit: cover;
+    object-position: right;
+    width: 100%;
+}
+
+/* ################ Media-Queries ################ */
+
+@media(max-width:500px){
+    html{       
+        font-size: 50%;
+    } 
+    .navbar .navitems, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* .header-content .main-heading{
+        display: none;
+    } */
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox,
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(min-width:501px) and (max-width:768px){
+    html{       
+        font-size: 50%;
+    } 
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .navitems, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* .header-content .main-heading{
+        display: none;
+    } */
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox,
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem; 
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media(min-width:769px) and (max-width:1200px){
+    html{
+        font-size:50%;
+    }
+}
+
+@media(orientation:landscape) and (max-height:500px){
+    .header{
+        height:90vmax;
+    }
+}
+
+
+
+
+
+
